@@ -1,17 +1,14 @@
-import { useState } from "react";
 import FeaturedNews from "../components/FeaturedNews";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 import NewsSection from "../components/NewsSection";
 
 export default function Home() {
-
   return (
     <>
-      <Navbar />
-      <FeaturedNews />
-      <NewsSection />
-      <Footer />
+      <Layout>
+        <FeaturedNews />
+        <NewsSection />
+      </Layout>
     </>
   );
 }

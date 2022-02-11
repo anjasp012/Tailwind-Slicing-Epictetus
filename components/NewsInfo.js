@@ -1,7 +1,11 @@
+import NewsAuthor from "./NewsAuthor";
+import NewsTitle from "./NewsTitle";
+
 export default function NewsInfo({
   categories,
   date,
   title,
+  href,
   description,
   descriptionWidth,
   profileAuthor,
@@ -10,16 +14,12 @@ export default function NewsInfo({
 }) {
   return (
     <>
-      <div className="flex space-x-3 text-sm text-white/60 mt-1.5">
-        <div className="uppercase">{categories}</div>
-        <span>&bull;</span>
-        <div className="">{date}</div>
-      </div>
-      <h2 className="text-2xl mt-3 leading-relaxed">
-        <a href="#" className="hover:underline">
-          {title}
-        </a>
-      </h2>
+      <NewsTitle
+        categories={categories}
+        date={date}
+        title={title}
+        href={href}
+      />
       <p
         className={`${
           descriptionWidth ? descriptionWidth : "w-full"
@@ -27,13 +27,11 @@ export default function NewsInfo({
       >
         {description}
       </p>
-      <div className="flex items-center mt-5">
-        <img src={profileAuthor} className="w-12" alt="" />
-        <div className="ml-4">
-          <h3>{nameAuthor}</h3>
-          <p className="text-white/60 text-sm">{profesionAuthor}</p>
-        </div>
-      </div>
+      <NewsAuthor
+        profileAuthor={profileAuthor}
+        nameAuthor={nameAuthor}
+        profesionAuthor={profesionAuthor}
+      />
     </>
   );
 }

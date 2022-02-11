@@ -3,7 +3,7 @@ import NewsInfo from "./NewsInfo";
 export default function CardNews({ thumbnail, ...news }) {
   return (
     <>
-      <div className="relative group rounded-lg overflow-hidden">
+      <div className="relative group rounded-lg overflow-hidden mb-5">
         <img
           src={thumbnail}
           className="w-full saturate-50 group-hover:saturate-100"

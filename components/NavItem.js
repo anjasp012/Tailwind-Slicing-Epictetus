@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function NavItem() {
   const navList = [
-    { text: "Ui Design", href: "#" },
+    { text: "Ui Design", href: "/News" },
     { text: "Front-End", href: "#" },
     { text: "Back-End", href: "#" },
   ];
@@ -9,7 +11,7 @@ export default function NavItem() {
     <>
       {navList.map(({ text, href }) => (
         <li key={text}>
-          <a href={href}>{text}</a>
+          <Link href={href}>{text}</Link>
         </li>
       ))}
     </>
