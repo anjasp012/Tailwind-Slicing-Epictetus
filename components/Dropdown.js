@@ -23,9 +23,7 @@ export default function Dropdown() {
           />
         </button>
         <div
-          className={`${
-            dropdown ? "block" : "hidden"
-          } absolute inset-0 min-h-screen`}
+          className={`${dropdown ? "fixed inset-0" : ""}`}
           onClick={() => setDropdown(!dropdown)}
         ></div>
         <div className="absolute mt-3 bg-[#1F2937] rounded overflow-hidden">

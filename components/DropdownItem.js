@@ -1,3 +1,5 @@
+import SearchInput from "./SearchInput";
+
 export default function DropdownItem() {
   const dropdownList = [
     { text: "Internet", href: "#" },

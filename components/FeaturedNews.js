@@ -3,10 +3,10 @@ import NewsInfo from "./NewsInfo";
 
 export default function FeaturedNews() {
   return (
-    <article className="pt-3 pb-10 border-b border-white/40 sm:pb-4 sm:border-none -z-40">
-      <div className="flex flex-wrap -mx-4 items-center">
-        <div className="w-full lg:w-8/12 sm:w-7/12 px-4">
-          <img src="section1.png" className="rounded-xl" alt="" />
+    <article className="pt-3 md:pb-10 -z-40">
+      <div className="flex flex-wrap -mx-4 items-start lg:items-center">
+        <div className="w-full lg:w-8/12 sm:w-7/12 px-4 ">
+          <img src="section1.png" className="rounded-xl mb-5 md:mb-0" alt="" />
         </div>
         <div className="w-full lg:w-4/12 sm:w-5/12 px-4">
           <NewsInfo
@@ -22,6 +22,7 @@ export default function FeaturedNews() {
           />
         </div>
       </div>
+      <hr className="mt-10 border opacity-10" />
     </article>
   );
 }
