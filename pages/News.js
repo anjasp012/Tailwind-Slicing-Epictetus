@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState } from "react";
 import CardNews from "../components/CardNews";
 import HeaderSection from "../components/HeaderSection";
@@ -9,6 +10,9 @@ export default function Posts() {
 
   return (
     <Layout>
+      <Head>
+        <title>UI Design &mdash; Epictetus </title>
+      </Head>
       <HeaderSection>UI Design</HeaderSection>
       <article className="pt-10 mt-1 -z-40">
         {!newest.length ? (

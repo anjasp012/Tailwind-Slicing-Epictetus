@@ -1,7 +1,7 @@
 export default function SearchInput() {
   return (
     <div className="relative ">
-      <div className="absolute top-3 left-3 sm:left-2 lg:left-14 xl:left-16 pointer-events-none">
+      <div className="absolute top-3 left-3 md:left-4 sm:left-2 lg:left-14 xl:left-16 pointer-events-none">
         <svg
           className="absolute w-[16px] h-[16px]"
           viewBox="0 0 14 14"
@@ -29,7 +29,7 @@ export default function SearchInput() {
       <input
         type="text"
         placeholder="Search"
-        className="py-2 pl-6 lg:pl-12 pr-4 w-full lg:w-10/12 placeholder-shown:border-gray-500 rounded-full bg-[#1F2937]/60"
+        className="py-2 pl-10 md:pl-10 lg:pl-12 pr-10 lg:pr-4 w-full lg:w-10/12 placeholder-shown:border-gray-500 rounded-full z-50 lg:bg-[#1F2937]/60 bg-[#1F2937]"
       />
     </div>
   );

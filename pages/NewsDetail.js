@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 import NewsAuthor from "../components/NewsAuthor";
 import NewsInfo from "../components/NewsInfo";
@@ -6,6 +7,9 @@ import NewsTitle from "../components/NewsTitle";
 export default function NewsDetail() {
   return (
     <Layout>
+      <Head>
+        <title>NewsDetail &mdash; Epictetus </title>
+      </Head>
       <div className="flex flex-col items-center md:w-6/12 w-full mx-auto">
         <NewsTitle
           categories="UI Design"
