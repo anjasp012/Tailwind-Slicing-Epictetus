@@ -34,7 +34,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="bg-gradient-to-b from-[#374151] to-[#111827] text-white font-display min-h-screen overflow-x-hidden">
+        <body className="bg-gradient-to-b from-[#374151] to-[#111827] text-white font-display min-h-screen max-w-screen overflow-x-hidden">
           <Main />
           <NextScript />
         </body>
